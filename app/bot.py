@@ -9,4 +9,6 @@ driver = webdriver.Remote('http://selenium:4444/wd/hub',
                           desired_capabilities=DesiredCapabilities.CHROME)
 
 driver.get("https://python.org")
-driver.save_screenshot('screenshot.png')
+
+print(driver.title)
+# driver.save_screenshot('screenshot.png')
